@@ -44,7 +44,6 @@ pipeline {
             post {
                 success {
                     archiveArtifacts "${env.BUILD_ID}/sources/dist/prog"
-                    sh "sudo rm -rf ${env.BUILD_ID}/sources/build ${env.BUILD_ID}/sources/dist"
                 }
             }
         }
