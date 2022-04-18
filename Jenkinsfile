@@ -1,4 +1,3 @@
-# Groovy code
 pipeline {
     agent none
     stages {
@@ -30,7 +29,7 @@ pipeline {
             }
         }
         
-     stage('Deliver') {
+      stage('Deliver') {
             agent any
             environment {
                 VOLUME = '$(pwd)/sources:/src'
