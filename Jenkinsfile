@@ -49,3 +49,10 @@ pipeline {
                 }
             }
         }
+
+        stage('Branch') {
+            agent any
+            steps {
+                echo 'name-of-the-branch'
+            }
+        }
