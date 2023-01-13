@@ -45,5 +45,10 @@ pipeline {
                 }
             }
         }
+        stage('Branch'){
+            step {
+                echo 'branch_two' 
+            }
+        }
     }
 }
