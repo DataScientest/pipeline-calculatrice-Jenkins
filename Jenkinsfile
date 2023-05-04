@@ -52,7 +52,7 @@ pipeline {
 		  stage('Branch') {
             agent any
             steps {
-                echo 'nom-de-la-branche: main'
+                echo 'nom-de-la-branche: dev'
             }
         }
 		
